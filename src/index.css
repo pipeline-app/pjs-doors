@@ -6,13 +6,6 @@
 All colors MUST be HSL.
 */
 
-@font-face {
-  font-family: 'Sink';
-  src: url('/src/assets/fonts/Sink.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: 'Roffene';
@@ -146,6 +139,6 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sink;
+    @apply font-inter;
   }
 }
