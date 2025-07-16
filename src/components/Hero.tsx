@@ -89,19 +89,19 @@ export function Hero() {
 
             {/* Right Column - Form */}
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
+              <div className="backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-white mb-2">
                     Get Your Free Estimate
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-white/90">
                     Fill out the form and we'll contact you within 24 hours
                   </p>
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div>
-                    <Label htmlFor="name" className="text-gray-700 font-medium">
+                    <Label htmlFor="name" className="text-white font-medium">
                       Your Name *
                     </Label>
                     <Input
@@ -112,12 +112,12 @@ export function Hero() {
                       {...register("name")}
                     />
                     {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                      <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>
                     )}
                   </div>
 
                   <div>
-                    <Label htmlFor="phone" className="text-gray-700 font-medium">
+                    <Label htmlFor="phone" className="text-white font-medium">
                       Phone Number *
                     </Label>
                     <Input
@@ -128,12 +128,12 @@ export function Hero() {
                       {...register("phone")}
                     />
                     {errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+                      <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>
                     )}
                   </div>
 
                   <div>
-                    <Label htmlFor="notes" className="text-gray-700 font-medium">
+                    <Label htmlFor="notes" className="text-white font-medium">
                       Service Details
                     </Label>
                     <Textarea
