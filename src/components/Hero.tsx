@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Shield, Star } from "lucide-react";
+import { Phone, Shield } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -50,11 +50,6 @@ export function Hero() {
             
             {/* Left Column - Headline & CTA */}
             <div className="space-y-8 animate-slide-up">
-              {/* Rating Stars */}
-              <div className="inline-block transform -rotate-1 mb-6">
-                
-              </div>
-              
               {/* Main Headline */}
               <div className="space-y-4">
                 <h2 className="text-4xl lg:text-6xl font-roffene font-bold text-white leading-tight">
