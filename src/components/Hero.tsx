@@ -82,7 +82,7 @@ export function Hero() {
 
             {/* Right Column - Form */}
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
+              <div className="p-8">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-white mb-2">
                     Get Your Free Estimate
