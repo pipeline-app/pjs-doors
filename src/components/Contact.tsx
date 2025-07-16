@@ -11,7 +11,7 @@ export function Contact() {
       style={{ backgroundImage: `url(${contactBackground})` }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-[#112329]"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
