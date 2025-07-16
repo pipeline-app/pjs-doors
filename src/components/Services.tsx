@@ -116,12 +116,12 @@ export function Services() {
         </div>
 
         {/* Garage Door Gallery */}
-        <div className="bg-gradient-cta text-primary-foreground p-8 rounded-2xl shadow-retro mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+        <div className="text-foreground p-8 rounded-2xl mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-4 text-chocolate-brown">
               Our Garage Door Gallery
             </h3>
-            <p className="text-lg opacity-90">
+            <p className="text-lg text-muted-foreground">
               Explore our stunning collection of garage doors for every style and need
             </p>
           </div>
