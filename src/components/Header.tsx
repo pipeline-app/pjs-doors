@@ -18,15 +18,11 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-cta rounded-lg flex items-center justify-center shadow-button">
-              <div className="w-6 h-4 bg-primary-foreground rounded-sm"></div>
-            </div>
-            <div>
-              <h1 className="text-xl font-retro font-black text-chocolate-brown">
-                PJ'S<span className="text-warm-orange">DOORS</span>
-              </h1>
-              <p className="text-xs text-muted-foreground">Family Owned & Operated</p>
-            </div>
+            <img 
+              src="/lovable-uploads/866ea9cb-85a6-4fee-9aab-999bfdc71174.png" 
+              alt="PJ's Doors Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
