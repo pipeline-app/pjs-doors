@@ -69,7 +69,7 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
-              className="relative overflow-hidden border-2 border-warm-orange/20 shadow-card hover:shadow-retro transition-all duration-300 bg-cream animate-slide-up"
+              className="relative overflow-hidden shadow-card hover:shadow-retro transition-all duration-300 bg-cream animate-slide-up"
               style={{ animationDelay: `${0.4 + (index * 0.2)}s` }}
             >
               {/* Decorative Quote */}
