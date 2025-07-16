@@ -5,7 +5,7 @@ import { Wrench, RotateCcw, Package, Clock, Phone, Shield } from "lucide-react";
 // Import brand logos
 import craftsmanLogo from "/lovable-uploads/fdf19fbb-2ae0-4864-9a18-9f361b823626.png";
 import chamberlainLogo from "@/assets/logos/chamberlain-logo.png";
-import liftmasterLogo from "@/assets/logos/liftmaster-logo.png";
+import liftmasterLogo from "/lovable-uploads/3a28feae-3315-4466-9b8a-9ff6597ea151.png";
 import genieLogo from "@/assets/logos/genie-logo.png";
 import wayneDaltonLogo from "@/assets/logos/wayne-dalton-logo.png";
 import clopayLogo from "@/assets/logos/clopay-logo.png";
