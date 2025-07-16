@@ -54,8 +54,8 @@ export function Hero() {
               {/* Main Headline */}
               <div className="space-y-4">
                 <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                  Broken Garage Door?<br />
-                  <span className="text-vintage-yellow">We'll Fix It Today!</span>
+                  Need a new garage door?<br />
+                  <span className="text-vintage-yellow">We'll get you one today.</span>
                 </h2>
                 <p className="text-xl lg:text-2xl text-white/90">
                   Same-day service available. Licensed & insured professionals ready to help.
