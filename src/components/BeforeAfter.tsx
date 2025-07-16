@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import beforeAfterImage from "@/assets/before-after-garage.jpg";
@@ -15,11 +16,12 @@ export function BeforeAfter() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl lg:text-5xl font-roffene font-black text-warm-orange mb-4 leading-none">
-              Amazing
-              <br />
-              <span className="text-chocolate-brown font-inter font-black">TRANSFORMATIONS</span>
-          </h2>
+            <SectionHeading 
+              firstWord="Amazing"
+              secondWord="TRANSFORMATIONS"
+              firstWordColor="orange"
+              secondWordColor="dark"
+            />
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             See how we transform broken, outdated garage doors into beautiful, functional entrances
           </p>

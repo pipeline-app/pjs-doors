@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 
@@ -38,10 +39,12 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl lg:text-5xl font-inter font-black text-chocolate-brown mb-4">
-            CUSTOMER
-            <span className="text-warm-orange"> REVIEWS</span>
-          </h2>
+          <SectionHeading 
+            firstWord="CUSTOMER"
+            secondWord="REVIEWS"
+            firstWordColor="dark"
+            secondWordColor="orange"
+          />
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Don't just take our word for it - hear from our satisfied customers
           </p>

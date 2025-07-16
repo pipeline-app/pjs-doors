@@ -1,9 +1,7 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Upload } from "lucide-react";
 import contactBackground from "@/assets/contact-background.jpg";
 
 export function Contact() {
@@ -19,10 +17,12 @@ export function Contact() {
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl lg:text-5xl font-inter font-black text-white mb-4">
-            GET YOUR
-            <span className="text-warm-orange"> FREE ESTIMATE</span>
-          </h2>
+          <SectionHeading 
+            firstWord="GET YOUR"
+            secondWord="FREE ESTIMATE"
+            firstWordColor="white"
+            secondWordColor="orange"
+          />
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Ready to fix or upgrade your garage door? Contact us today for a free, no-obligation estimate
           </p>

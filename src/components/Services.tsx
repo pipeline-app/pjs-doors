@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, RotateCcw, Package, Clock, Phone, Shield } from "lucide-react";
@@ -66,10 +67,12 @@ export function Services() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl lg:text-5xl font-inter font-black text-chocolate-brown mb-4">
-            OUR
-            <span className="text-warm-orange"> SERVICES</span>
-          </h2>
+          <SectionHeading 
+            firstWord="OUR"
+            secondWord="SERVICES"
+            firstWordColor="dark"
+            secondWordColor="orange"
+          />
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Professional garage door solutions for every need and budget
           </p>
