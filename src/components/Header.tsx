@@ -1,0 +1,101 @@
+import { Button } from "@/components/ui/button";
+import { Phone, Menu, X } from "lucide-react";
+import { useState } from "react";
+
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { label: "Services", href: "#services" },
+    { label: "Before & After", href: "#gallery" },
+    { label: "Reviews", href: "#reviews" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b-2 border-warm-orange/20 shadow-sm">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-cta rounded-lg flex items-center justify-center shadow-button">
+              <div className="w-6 h-4 bg-primary-foreground rounded-sm"></div>
+            </div>
+            <div>
+              <h1 className="text-xl font-retro font-black text-chocolate-brown">
+                GARAGE<span className="text-warm-orange">PRO</span>
+              </h1>
+              <p className="text-xs text-muted-foreground">Garage Door Experts</p>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className="text-foreground hover:text-warm-orange font-medium transition-colors relative group"
+              >
+                {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-warm-orange group-hover:w-full transition-all duration-300"></span>
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-4">
+            <a 
+              href="tel:+15551234567"
+              className="flex items-center gap-2 text-warm-orange hover:text-warm-orange/80 font-bold transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              (555) 123-4567
+            </a>
+            <Button variant="retro" size="sm">
+              Free Estimate
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 text-chocolate-brown hover:text-warm-orange transition-colors"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-warm-orange/20 bg-cream/95 backdrop-blur-sm animate-slide-up">
+            <nav className="flex flex-col gap-4">
+              {navItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-foreground hover:text-warm-orange font-medium transition-colors px-4 py-2"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="px-4 pt-4 border-t border-warm-orange/20 space-y-3">
+                <a 
+                  href="tel:+15551234567"
+                  className="flex items-center gap-2 text-warm-orange font-bold text-lg"
+                >
+                  <Phone className="w-5 h-5" />
+                  (555) 123-4567
+                </a>
+                <Button variant="retro" className="w-full">
+                  Get Free Estimate
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}

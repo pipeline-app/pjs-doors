@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        /* Retro Garage Door Button Variants */
+        retro: "bg-gradient-cta text-primary-foreground font-bold shadow-button hover:scale-105 transform transition-all duration-300 border-2 border-warm-orange/30",
+        heroCall: "bg-gradient-cta text-primary-foreground font-retro text-lg px-8 py-4 shadow-retro hover:shadow-button hover:scale-105 transform transition-all duration-300 animate-pulse-glow border-2 border-warm-orange/50",
+        estimate: "bg-vintage-yellow text-chocolate-brown font-bold border-2 border-chocolate-brown/20 hover:bg-vintage-yellow/90 hover:scale-105 transform transition-all duration-300",
+        emergency: "bg-destructive text-destructive-foreground font-bold animate-pulse-glow border-2 border-destructive/50 hover:scale-105 transform transition-all",
       },
       size: {
         default: "h-10 px-4 py-2",
