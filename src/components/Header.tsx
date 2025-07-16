@@ -28,7 +28,7 @@ export function Header() {
         ? 'bg-background/95 backdrop-blur-sm border-b-2 border-warm-orange/20 shadow-sm' 
         : 'bg-transparent border-b-2 border-transparent'
     }`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 shadow-lg shadow-black/10">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
