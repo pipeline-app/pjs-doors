@@ -15,7 +15,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="text-primary-foreground" style={{ backgroundColor: '#0D3441' }}>
+    <footer className="text-white" style={{ backgroundColor: '#0D3441' }}>
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
@@ -25,7 +25,7 @@ export function Footer() {
               <h3 className="text-2xl font-retro font-black text-vintage-yellow mb-2">
                 PJ'S DOORS
               </h3>
-              <p className="text-primary-foreground/80 text-sm leading-relaxed">
+              <p className="text-white/80 text-sm leading-relaxed">
                 Family owned garage door company serving Indiana and surrounding areas. 
                 We handle residential & commercial install, repair & maintenance.
                 Licensed, insured, and focused on quality & customer service.
@@ -56,7 +56,7 @@ export function Footer() {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-primary-foreground/80 hover:text-vintage-yellow transition-colors text-sm"
+                    className="text-white/80 hover:text-vintage-yellow transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -70,12 +70,12 @@ export function Footer() {
             <h4 className="text-lg font-bold text-vintage-yellow mb-4">Service Areas</h4>
             <ul className="space-y-2">
               {serviceAreas.map((area, index) => (
-                <li key={index} className="text-primary-foreground/80 text-sm">
+                <li key={index} className="text-white/80 text-sm">
                   {area}
                 </li>
               ))}
             </ul>
-            <p className="text-xs text-primary-foreground/60 mt-4">
+            <p className="text-xs text-white/60 mt-4">
               Call us to see if we service your area!
             </p>
           </div>
@@ -118,7 +118,7 @@ export function Footer() {
                 <Clock className="w-5 h-5 text-warm-orange mt-0.5" />
                 <div>
                   <p className="font-semibold text-sm">Business Hours</p>
-                  <p className="text-xs text-primary-foreground/80">
+                  <p className="text-xs text-white/80">
                     Mon-Fri: 8AM-5PM<br />
                     Saturday: 8AM-12PM<br />
                     Sunday: By Appointment<br />
@@ -133,9 +133,9 @@ export function Footer() {
 
 
       {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/20 py-6" style={{ backgroundColor: '#0D3441' }}>
+      <div className="border-t border-white/20 py-6" style={{ backgroundColor: '#0D3441' }}>
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
             <div>
               <p>&copy; 2024 PJ's Doors. All rights reserved.</p>
               <p>Licensed & Insured | Family Owned & Operated</p>
