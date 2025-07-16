@@ -15,7 +15,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="text-white" style={{ backgroundColor: '#0D3441' }}>
+    <footer className="text-white" style={{ backgroundColor: '#112329' }}>
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
@@ -124,7 +124,7 @@ export function Footer() {
 
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/20 py-6" style={{ backgroundColor: '#0D3441' }}>
+      <div className="border-t border-white/20 py-6" style={{ backgroundColor: '#112329' }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
             <div>
