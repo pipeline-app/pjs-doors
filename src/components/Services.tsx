@@ -23,23 +23,74 @@ export function Services() {
   const services = [
     {
       icon: Wrench,
-      title: "Garage & Overhead Doors",
-      description: "Residential and commercial door installation, repair and maintenance",
-      features: ["Same-day service", "All brands serviced", "Parts warranty"],
-      price: "Call for Quote"
+      title: "Garage Door Repair",
+      description: "Professional repairs for all types and brands",
+      features: [
+        "24/7 Emergency Service",
+        "Spring Replacement",
+        "Panel & Hardware Repair",
+        "Track & Roller Issues"
+      ],
+      price: "Starting at $89"
     },
     {
       icon: RotateCcw,
-      title: "Roll-Up & High Speed Doors",
-      description: "Commercial roll-up doors and high-speed industrial door solutions",
-      features: ["Commercial grade", "Professional installation", "Fast operation"],
-      price: "Call for Quote"
+      title: "Door Replacement",
+      description: "Complete garage door replacement service",
+      features: [
+        "Premium Quality Doors",
+        "Professional Installation", 
+        "Full Warranty Coverage",
+        "Free Estimate & Consultation"
+      ],
+      price: "Starting at $599"
     },
     {
       icon: Package,
-      title: "Fire-Rated & Retractable Screens",
-      description: "Specialized fire-rated doors and retractable screen installations",
-      features: ["Safety certified", "Code compliant", "Custom solutions"],
+      title: "Opener Installation",
+      description: "Install new garage door openers",
+      features: [
+        "Smart & WiFi Enabled",
+        "Belt & Chain Drive Options",
+        "Safety Feature Installation",
+        "Remote Programming"
+      ],
+      price: "Starting at $299"
+    },
+    {
+      icon: Clock,
+      title: "Maintenance Service",
+      description: "Keep your garage door running smoothly",
+      features: [
+        "Annual Tune-Up",
+        "Lubrication Service",
+        "Safety Inspection",
+        "Weather Seal Replacement"
+      ],
+      price: "Starting at $129"
+    },
+    {
+      icon: Phone,
+      title: "Emergency Repair",
+      description: "24/7 emergency garage door service",
+      features: [
+        "Same-Day Service",
+        "24/7 Availability",
+        "Emergency Spring Repair",
+        "Broken Door Recovery"
+      ],
+      price: "Starting at $149"
+    },
+    {
+      icon: Shield,
+      title: "Commercial Services", 
+      description: "Professional commercial door solutions",
+      features: [
+        "Roll-Up Door Service",
+        "High-Speed Doors",
+        "Fire-Rated Doors",
+        "Commercial Maintenance"
+      ],
       price: "Call for Quote"
     }
   ];
@@ -54,10 +105,10 @@ export function Services() {
   ];
 
   const galleryImages = [
-    { src: garageDoor1, alt: "Modern residential garage door with white sectional panels" },
-    { src: garageDoor2, alt: "Traditional carriage house garage door with dark wood finish" },
-    { src: garageDoor3, alt: "Contemporary garage door with glass panels and aluminum frame" },
-    { src: garageDoor4, alt: "Rustic garage door with natural wood planks" },
+    { src: garageDoor1, alt: "Modern sectional garage door in white" },
+    { src: garageDoor2, alt: "Traditional carriage style garage door" },
+    { src: garageDoor3, alt: "Contemporary garage door with windows" },
+    { src: garageDoor4, alt: "Wooden garage door with decorative hardware" },
     { src: garageDoor5, alt: "Industrial roll-up garage door for commercial use" },
     { src: garageDoor6, alt: "Classic raised panel garage door in beige color" }
   ];
@@ -79,7 +130,7 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -121,57 +172,45 @@ export function Services() {
         {/* Garage Door Gallery */}
         <div className="text-foreground p-8 rounded-2xl mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4 text-chocolate-brown">
-              Our Garage Door Gallery
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              Explore our stunning collection of garage doors for every style and need
+            <h3 className="text-3xl font-bold text-chocolate-brown mb-4">Our Work Gallery</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Browse through our collection of recent garage door installations and repairs
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
               <div 
                 key={index}
-                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="aspect-square overflow-hidden border-2 border-warm-orange/20 hover:border-warm-orange/40 transition-all duration-300 hover:scale-105"
               >
                 <img 
                   src={image.src} 
                   alt={image.alt}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="text-sm font-medium px-4 py-2 bg-white/20 rounded-lg backdrop-blur-sm">
-                      View Details
-                    </div>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Brands Section */}
+        {/* Brand Partners */}
         <div className="text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
-          <h3 className="text-2xl font-bold text-chocolate-brown mb-8">Brands We Service</h3>
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
+          <h3 className="text-2xl font-bold text-chocolate-brown mb-8">Trusted Brand Partners</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {brands.map((brand, index) => (
               <div 
                 key={index}
-                className="px-6 py-4 hover:scale-105 transition-all duration-300 flex items-center justify-center min-h-[100px]"
+                className="flex items-center justify-center p-4 bg-cream border border-warm-orange/20 hover:border-warm-orange/40 transition-all duration-300 hover:scale-105"
               >
                 <img 
                   src={brand.logo} 
-                  alt={`${brand.name} logo`} 
-                  className="max-h-20 max-w-48 object-contain"
+                  alt={`${brand.name} logo`}
+                  className="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
             ))}
           </div>
-          <p className="text-muted-foreground">
-            Don't see your brand? <span className="text-warm-orange font-semibold">Call us anyway!</span> We service all major garage door brands.
-          </p>
         </div>
       </div>
     </section>
