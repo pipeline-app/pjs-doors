@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, RotateCcw, Package, Clock, Phone, Shield } from "lucide-react";
 
+// Import brand logos
+import craftsmanLogo from "@/assets/logos/craftsman-logo.png";
+import chamberlainLogo from "@/assets/logos/chamberlain-logo.png";
+import liftmasterLogo from "@/assets/logos/liftmaster-logo.png";
+import genieLogo from "@/assets/logos/genie-logo.png";
+import wayneDaltonLogo from "@/assets/logos/wayne-dalton-logo.png";
+import clopayLogo from "@/assets/logos/clopay-logo.png";
+
 export function Services() {
   const services = [
     {
@@ -28,7 +36,12 @@ export function Services() {
   ];
 
   const brands = [
-    "Craftsman", "Chamberlain", "LiftMaster", "Genie", "Wayne Dalton", "Clopay"
+    { name: "Craftsman", logo: craftsmanLogo },
+    { name: "Chamberlain", logo: chamberlainLogo },
+    { name: "LiftMaster", logo: liftmasterLogo },
+    { name: "Genie", logo: genieLogo },
+    { name: "Wayne Dalton", logo: wayneDaltonLogo },
+    { name: "Clopay", logo: clopayLogo }
   ];
 
   return (
@@ -122,9 +135,13 @@ export function Services() {
             {brands.map((brand, index) => (
               <div 
                 key={index}
-                className="px-6 py-3 bg-cream border-2 border-warm-orange/20 rounded-lg font-semibold text-chocolate-brown hover:bg-warm-orange hover:text-primary-foreground transition-all duration-300"
+                className="px-6 py-4 bg-cream border-2 border-warm-orange/20 rounded-lg hover:bg-warm-orange hover:scale-105 transition-all duration-300 flex items-center justify-center min-h-[80px]"
               >
-                {brand}
+                <img 
+                  src={brand.logo} 
+                  alt={`${brand.name} logo`} 
+                  className="max-h-12 max-w-32 object-contain"
+                />
               </div>
             ))}
           </div>
