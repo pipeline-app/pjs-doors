@@ -61,10 +61,10 @@ export function Header() {
           <div className="hidden md:flex items-center">
             <a 
               href="tel:+17653771000"
-              className="flex flex-col items-center gap-1 bg-warm-orange text-white px-6 py-3 font-bold hover:bg-warm-orange/90 transition-colors"
+              className="flex flex-col items-center bg-warm-orange text-white px-6 py-3 font-bold hover:bg-warm-orange/90 transition-colors"
               style={{ backgroundColor: '#C85E28' }}
             >
-              <span className="text-sm">Click to call for free estimate</span>
+              <span className="text-sm">You may click to call for a free estimate</span>
               <span className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 765.377.1000
