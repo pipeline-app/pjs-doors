@@ -45,7 +45,11 @@ export function Header() {
               <a
                 key={index}
                 href={item.href}
-                className="text-foreground hover:text-warm-orange font-medium transition-colors relative group"
+                className={`font-medium transition-all duration-300 relative group ${
+                  scrolled 
+                    ? 'text-foreground hover:text-warm-orange' 
+                    : 'text-white hover:text-warm-orange'
+                }`}
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-warm-orange group-hover:w-full transition-all duration-300"></span>
@@ -70,7 +74,11 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-chocolate-brown hover:text-warm-orange transition-colors"
+            className={`md:hidden p-2 transition-all duration-300 ${
+              scrolled 
+                ? 'text-chocolate-brown hover:text-warm-orange' 
+                : 'text-white hover:text-warm-orange'
+            }`}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
