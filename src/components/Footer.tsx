@@ -2,16 +2,16 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react";
 
 export function Footer() {
   const serviceAreas = [
-    "Riverside", "Corona", "Moreno Valley", "Norco", "Jurupa Valley", "Eastvale"
+    "Indiana", "Lafayette", "West Lafayette", "Kokomo", "Frankfort", "Lebanon"
   ];
 
   const quickLinks = [
-    { label: "Garage Door Repair", href: "#repair" },
-    { label: "Door Replacement", href: "#replacement" },
-    { label: "Opener Installation", href: "#openers" },
-    { label: "Emergency Service", href: "#emergency" },
-    { label: "Free Estimates", href: "#estimate" },
-    { label: "Maintenance Plans", href: "#maintenance" }
+    { label: "Garage Doors", href: "#garage" },
+    { label: "Overhead Doors", href: "#overhead" },
+    { label: "Roll-Up Doors", href: "#rollup" },
+    { label: "High Speed Doors", href: "#highspeed" },
+    { label: "Fire-Rated Doors", href: "#firerated" },
+    { label: "Retractable Screens", href: "#screens" }
   ];
 
   return (
@@ -23,11 +23,12 @@ export function Footer() {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-retro font-black text-vintage-yellow mb-2">
-                GARAGEPRO
+                PJ'S DOORS
               </h3>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                Your trusted garage door experts serving Riverside County for over 30 years. 
-                Licensed, insured, and committed to quality service.
+                Family owned garage door company serving Indiana and surrounding areas. 
+                We handle residential & commercial install, repair & maintenance.
+                Licensed, insured, and focused on quality & customer service.
               </p>
             </div>
             
@@ -38,7 +39,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-vintage-yellow" />
-                <span className="text-sm">Licensed & Insured</span>
+                <span className="text-sm">We Answer The Phone!</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-vintage-yellow" />
@@ -70,12 +71,12 @@ export function Footer() {
             <ul className="space-y-2">
               {serviceAreas.map((area, index) => (
                 <li key={index} className="text-primary-foreground/80 text-sm">
-                  {area}, CA
+                  {area}
                 </li>
               ))}
             </ul>
             <p className="text-xs text-primary-foreground/60 mt-4">
-              Don't see your city? Call us - we may service your area!
+              Call us to see if we service your area!
             </p>
           </div>
 
@@ -87,18 +88,18 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-warm-orange mt-0.5" />
                 <div>
                   <p className="font-semibold text-sm">Main Line</p>
-                  <a href="tel:+15551234567" className="text-warm-orange hover:text-vintage-yellow transition-colors">
-                    (555) 123-4567
+                  <a href="tel:+17653771000" className="text-warm-orange hover:text-vintage-yellow transition-colors">
+                    765.377.1000
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-destructive mt-0.5 animate-pulse" />
+                <Phone className="w-5 h-5 text-warm-orange mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm">Emergency 24/7</p>
-                  <a href="tel:+15559114367" className="text-destructive hover:text-vintage-yellow transition-colors">
-                    (555) 911-DOOR
+                  <p className="font-semibold text-sm">Schedule Today</p>
+                  <a href="tel:+17653771000" className="text-warm-orange hover:text-vintage-yellow transition-colors">
+                    765.377.1000
                   </a>
                 </div>
               </div>
@@ -107,8 +108,8 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-warm-orange mt-0.5" />
                 <div>
                   <p className="font-semibold text-sm">Email</p>
-                  <a href="mailto:info@garagedoorpro.com" className="text-warm-orange hover:text-vintage-yellow transition-colors text-sm">
-                    info@garagedoorpro.com
+                  <a href="mailto:info@pjsdoors.com" className="text-warm-orange hover:text-vintage-yellow transition-colors text-sm">
+                    info@pjsdoors.com
                   </a>
                 </div>
               </div>
@@ -118,9 +119,10 @@ export function Footer() {
                 <div>
                   <p className="font-semibold text-sm">Business Hours</p>
                   <p className="text-xs text-primary-foreground/80">
-                    Mon-Fri: 7AM-8PM<br />
-                    Sat: 8AM-6PM<br />
-                    Sun: 9AM-5PM
+                    Mon-Fri: 8AM-5PM<br />
+                    Saturday: 8AM-12PM<br />
+                    Sunday: By Appointment<br />
+                    <span className="text-warm-orange font-medium">Call for Service!</span>
                   </p>
                 </div>
               </div>
@@ -129,22 +131,22 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Emergency Banner */}
-      <div className="bg-destructive text-destructive-foreground py-4">
+      {/* Call to Action Banner */}
+      <div className="bg-warm-orange text-primary-foreground py-4">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <Phone className="w-6 h-6 animate-pulse" />
               <div>
-                <p className="font-bold">24/7 Emergency Service Available</p>
-                <p className="text-sm opacity-90">Garage door stuck? We'll get you moving!</p>
+                <p className="font-bold">Ready to Get Started?</p>
+                <p className="text-sm opacity-90">Call PJ's Doors today for your project!</p>
               </div>
             </div>
             <a 
-              href="tel:+15559114367"
-              className="bg-destructive-foreground text-destructive px-6 py-2 rounded-lg font-bold hover:bg-destructive-foreground/90 transition-colors"
+              href="tel:+17653771000"
+              className="bg-primary-foreground text-warm-orange px-6 py-2 rounded-lg font-bold hover:bg-primary-foreground/90 transition-colors"
             >
-              Call Emergency Line
+              Call 765.377.1000
             </a>
           </div>
         </div>
@@ -155,8 +157,8 @@ export function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
             <div>
-              <p>&copy; 2024 GaragePro Garage Door Services. All rights reserved.</p>
-              <p>Licensed Contractor #123456 | Bonded & Insured</p>
+              <p>&copy; 2024 PJ's Doors. All rights reserved.</p>
+              <p>Licensed & Insured | Family Owned & Operated</p>
             </div>
             <div className="flex gap-6">
               <a href="#privacy" className="hover:text-vintage-yellow transition-colors">Privacy Policy</a>

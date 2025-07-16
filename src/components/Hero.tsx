@@ -34,16 +34,16 @@ export function Hero() {
             {/* Main Headlines */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-retro font-black text-primary-foreground leading-tight">
-                BROKEN
+                PJ'S
                 <br />
-                <span className="text-vintage-yellow">GARAGE DOOR?</span>
+                <span className="text-vintage-yellow">DOORS</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-bold text-primary-foreground">
-                We Fix It Fast!
+                Install • Repair • Maintenance
               </h2>
               <p className="text-lg lg:text-xl text-primary-foreground/90 max-w-lg">
-                Professional garage door repair & replacement serving your community for over 30 years. 
-                Same-day service, fair prices, guaranteed work.
+                Family owned, licensed & insured. We handle residential & commercial garage doors, 
+                overhead doors, roll-up doors, high speed doors, and more!
               </p>
             </div>
 
@@ -62,12 +62,12 @@ export function Hero() {
               <div className="flex items-center gap-3 p-4 bg-primary-foreground/15 rounded-lg border-2 border-primary-foreground/30">
                 <Phone className="w-6 h-6 text-vintage-yellow animate-pulse" />
                 <div>
-                  <p className="text-sm text-primary-foreground/80">Call Now:</p>
+                  <p className="text-sm text-primary-foreground/80">Call Today:</p>
                   <a 
-                    href="tel:+15551234567" 
+                    href="tel:+17653771000" 
                     className="text-2xl font-bold text-primary-foreground hover:text-vintage-yellow transition-colors"
                   >
-                    (555) 123-4567
+                    765.377.1000
                   </a>
                 </div>
               </div>

@@ -23,9 +23,9 @@ export function Header() {
             </div>
             <div>
               <h1 className="text-xl font-retro font-black text-chocolate-brown">
-                GARAGE<span className="text-warm-orange">PRO</span>
+                PJ'S<span className="text-warm-orange">DOORS</span>
               </h1>
-              <p className="text-xs text-muted-foreground">Garage Door Experts</p>
+              <p className="text-xs text-muted-foreground">Family Owned & Operated</p>
             </div>
           </div>
 
@@ -46,11 +46,11 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="tel:+15551234567"
+              href="tel:+17653771000"
               className="flex items-center gap-2 text-warm-orange hover:text-warm-orange/80 font-bold transition-colors"
             >
               <Phone className="w-4 h-4" />
-              (555) 123-4567
+              765.377.1000
             </a>
             <Button variant="retro" size="sm">
               Free Estimate
@@ -82,11 +82,11 @@ export function Header() {
               ))}
               <div className="px-4 pt-4 border-t border-warm-orange/20 space-y-3">
                 <a 
-                  href="tel:+15551234567"
+                  href="tel:+17653771000"
                   className="flex items-center gap-2 text-warm-orange font-bold text-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  (555) 123-4567
+                  765.377.1000
                 </a>
                 <Button variant="retro" className="w-full">
                   Get Free Estimate

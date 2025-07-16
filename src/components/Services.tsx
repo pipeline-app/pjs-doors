@@ -6,24 +6,24 @@ export function Services() {
   const services = [
     {
       icon: Wrench,
-      title: "Garage Door Repair",
-      description: "Broken springs, cables, rollers, and openers fixed fast",
+      title: "Garage & Overhead Doors",
+      description: "Residential and commercial door installation, repair and maintenance",
       features: ["Same-day service", "All brands serviced", "Parts warranty"],
-      price: "Starting at $99"
+      price: "Call for Quote"
     },
     {
       icon: RotateCcw,
-      title: "Door Replacement",
-      description: "New garage doors that boost curb appeal and home value",
-      features: ["Free estimates", "Professional installation", "Modern styles"],
-      price: "Starting at $899"
+      title: "Roll-Up & High Speed Doors",
+      description: "Commercial roll-up doors and high-speed industrial door solutions",
+      features: ["Commercial grade", "Professional installation", "Fast operation"],
+      price: "Call for Quote"
     },
     {
       icon: Package,
-      title: "Opener Installation",
-      description: "Smart garage door openers with app control and safety features",
-      features: ["WiFi enabled", "Battery backup", "Safety sensors"],
-      price: "Starting at $299"
+      title: "Fire-Rated & Retractable Screens",
+      description: "Specialized fire-rated doors and retractable screen installations",
+      features: ["Safety certified", "Code compliant", "Custom solutions"],
+      price: "Call for Quote"
     }
   ];
 
@@ -100,11 +100,11 @@ export function Services() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="emergency" size="lg">
                   <Phone className="w-5 h-5" />
-                  Call Emergency Line
+                  Call 765.377.1000
                 </Button>
                 <div className="text-center sm:text-left">
-                  <div className="text-sm opacity-80">Emergency Hotline:</div>
-                  <div className="text-xl font-bold">(555) 911-DOOR</div>
+                  <div className="text-sm opacity-80">Schedule Today:</div>
+                  <div className="text-xl font-bold">765.377.1000</div>
                 </div>
               </div>
             </div>

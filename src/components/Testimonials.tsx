@@ -4,33 +4,33 @@ import { Star, Quote } from "lucide-react";
 export function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      location: "Riverside, CA",
+      name: "Sarah Miller",
+      location: "Lafayette, IN",
       rating: 5,
-      text: "Our garage door spring broke on a Saturday morning and we couldn't get our cars out. Called these guys and they had someone here within 2 hours! Professional, fair pricing, and quality work. Highly recommend!",
-      service: "Spring Repair"
+      text: "PJ's Doors was fantastic! They installed our new garage door quickly and professionally. The team was courteous and cleaned up everything perfectly. Our new door looks amazing and works flawlessly!",
+      service: "Door Installation"
     },
     {
-      name: "Mike Rodriguez", 
-      location: "Corona, CA",
+      name: "Mike Thompson", 
+      location: "West Lafayette, IN",
       rating: 5,
-      text: "Replaced our 20-year-old garage door with a beautiful new insulated model. The installation team was incredibly professional and the door looks amazing. Neighbors are already asking for their number!",
-      service: "Door Replacement"
+      text: "Called PJ's when our commercial overhead door got stuck. They came out the same day and had it fixed in no time. Great service, fair pricing, and they really know their stuff. Highly recommend!",
+      service: "Overhead Door Repair"
     },
     {
-      name: "Jennifer Chen",
-      location: "Moreno Valley, CA", 
+      name: "Jennifer Davis",
+      location: "Kokomo, IN", 
       rating: 5,
-      text: "Best garage door company in the area! They installed our smart opener and taught us how to use all the features. The warranty and follow-up service has been excellent. You won't find better service anywhere.",
-      service: "Opener Installation"
+      text: "Family owned business that really cares about their customers. They installed a high-speed door for our warehouse and the difference in efficiency is incredible. Professional from start to finish!",
+      service: "High-Speed Door"
     }
   ];
 
   const stats = [
-    { number: "1000+", label: "Happy Customers" },
-    { number: "30+", label: "Years Experience" },
+    { number: "500+", label: "Happy Customers" },
+    { number: "Family", label: "Owned Business" },
     { number: "4.9★", label: "Average Rating" },
-    { number: "24/7", label: "Emergency Service" }
+    { number: "Licensed", label: "& Insured" }
   ];
 
   return (

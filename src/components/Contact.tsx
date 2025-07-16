@@ -104,26 +104,26 @@ export function Contact() {
           {/* Contact Info & Emergency */}
           <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             {/* Emergency Contact */}
-            <Card className="border-2 border-destructive/20 shadow-card bg-gradient-to-r from-destructive/5 to-destructive/10">
+            <Card className="border-2 border-warm-orange/20 shadow-card bg-gradient-to-r from-warm-orange/5 to-warm-orange/10">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-destructive flex items-center gap-3">
+                <CardTitle className="text-2xl font-bold text-warm-orange flex items-center gap-3">
                   <Phone className="w-6 h-6 animate-pulse" />
-                  Emergency Service
+                  Call PJ's Doors Today!
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-lg mb-4">
-                  Garage door emergency? Don't wait - call our 24/7 emergency line now!
+                  Ready for your door project? Call us today to schedule an appointment!
                 </p>
                 <div className="space-y-4">
                   <a 
-                    href="tel:+15559114367" 
-                    className="block text-center p-4 bg-destructive text-destructive-foreground rounded-lg font-bold text-xl hover:bg-destructive/90 transition-colors"
+                    href="tel:+17653771000" 
+                    className="block text-center p-4 bg-warm-orange text-primary-foreground rounded-lg font-bold text-xl hover:bg-warm-orange/90 transition-colors"
                   >
-                    (555) 911-DOOR
+                    765.377.1000
                   </a>
                   <p className="text-sm text-muted-foreground text-center">
-                    Available 24/7 for emergency repairs
+                    Schedule an appointment today!
                   </p>
                 </div>
               </CardContent>
@@ -139,8 +139,8 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-warm-orange mt-1" />
                   <div>
                     <p className="font-semibold text-chocolate-brown">Main Phone</p>
-                    <a href="tel:+15551234567" className="text-warm-orange hover:underline">
-                      (555) 123-4567
+                    <a href="tel:+17653771000" className="text-warm-orange hover:underline">
+                      765.377.1000
                     </a>
                   </div>
                 </div>
@@ -149,8 +149,8 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-warm-orange mt-1" />
                   <div>
                     <p className="font-semibold text-chocolate-brown">Email</p>
-                    <a href="mailto:info@garagedoorpro.com" className="text-warm-orange hover:underline">
-                      info@garagedoorpro.com
+                    <a href="mailto:info@pjsdoors.com" className="text-warm-orange hover:underline">
+                      info@pjsdoors.com
                     </a>
                   </div>
                 </div>
@@ -160,9 +160,9 @@ export function Contact() {
                   <div>
                     <p className="font-semibold text-chocolate-brown">Service Area</p>
                     <p className="text-muted-foreground">
-                      Riverside County, CA<br />
-                      Corona • Riverside • Moreno Valley<br />
-                      Norco • Jurupa Valley
+                      Indiana & Surrounding Areas<br />
+                      Residential & Commercial<br />
+                      Licensed & Insured
                     </p>
                   </div>
                 </div>
@@ -172,10 +172,10 @@ export function Contact() {
                   <div>
                     <p className="font-semibold text-chocolate-brown">Business Hours</p>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
-                      <p>Saturday: 8:00 AM - 6:00 PM</p>
-                      <p>Sunday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-destructive font-medium">Emergency: 24/7</p>
+                      <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                      <p>Saturday: 8:00 AM - 12:00 PM</p>
+                      <p>Sunday: By Appointment</p>
+                      <p className="text-warm-orange font-medium">Call for Service!</p>
                     </div>
                   </div>
                 </div>
