@@ -11,7 +11,7 @@ export function Contact() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl lg:text-5xl font-retro font-black text-chocolate-brown mb-4">
+          <h2 className="text-4xl lg:text-5xl font-sink font-black text-chocolate-brown mb-4">
             GET YOUR
             <span className="text-warm-orange"> FREE ESTIMATE</span>
           </h2>
