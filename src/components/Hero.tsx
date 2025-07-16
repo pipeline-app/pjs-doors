@@ -1,104 +1,91 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Clock, Shield, Star } from "lucide-react";
-import heroImage from "@/assets/hero-garage-door.jpg";
+import houseGarageBackground from "@/assets/house-garage-background.jpg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_25%,rgba(255,255,255,0.1)_50%,transparent_50%,transparent_75%,rgba(255,255,255,0.1)_75%)] bg-[length:20px_20px]"></div>
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={houseGarageBackground} 
+          alt="Beautiful house with garage door"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
-          {/* Left Column - Content */}
-          <div className="text-left space-y-8 animate-slide-up">
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-4 text-sm">
-              <div className="flex items-center gap-2 bg-primary-foreground/20 px-3 py-1 rounded-full">
-                <Shield className="w-4 h-4" />
-                <span className="font-semibold">Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary-foreground/20 px-3 py-1 rounded-full">
-                <Star className="w-4 h-4" />
-                <span className="font-semibold">30+ Years Experience</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary-foreground/20 px-3 py-1 rounded-full">
-                <Clock className="w-4 h-4" />
-                <span className="font-semibold">Same Day Service</span>
-              </div>
+        <div className="max-w-2xl min-h-screen flex flex-col justify-center">
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap gap-4 text-sm mb-8 animate-slide-up">
+            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+              <Shield className="w-4 h-4" />
+              <span className="font-semibold text-white">Licensed & Insured</span>
             </div>
-
-            {/* Main Headlines */}
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-retro font-black text-primary-foreground leading-tight">
-                PJ'S
-                <br />
-                <span className="text-vintage-yellow">DOORS</span>
-              </h1>
-              <h2 className="text-2xl lg:text-3xl font-bold text-primary-foreground">
-                Install • Repair • Maintenance
-              </h2>
-              <p className="text-lg lg:text-xl text-primary-foreground/90 max-w-lg">
-                Family owned, licensed & insured. We handle residential & commercial garage doors, 
-                overhead doors, roll-up doors, high speed doors, and more!
-              </p>
+            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+              <Star className="w-4 h-4" />
+              <span className="font-semibold text-white">Family Owned</span>
             </div>
-
-            {/* CTAs */}
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="heroCall" size="lg" className="text-xl">
-                  Get FREE Estimate
-                </Button>
-                <Button variant="emergency" size="lg">
-                  Emergency Service
-                </Button>
-              </div>
-              
-              {/* Phone Number */}
-              <div className="flex items-center gap-3 p-4 bg-primary-foreground/15 rounded-lg border-2 border-primary-foreground/30">
-                <Phone className="w-6 h-6 text-vintage-yellow animate-pulse" />
-                <div>
-                  <p className="text-sm text-primary-foreground/80">Call Today:</p>
-                  <a 
-                    href="tel:+17653771000" 
-                    className="text-2xl font-bold text-primary-foreground hover:text-vintage-yellow transition-colors"
-                  >
-                    765.377.1000
-                  </a>
-                </div>
-              </div>
+            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+              <Clock className="w-4 h-4" />
+              <span className="font-semibold text-white">Quality Service</span>
             </div>
+          </div>
 
-            {/* Value Props */}
-            <div className="grid grid-cols-2 gap-4 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-vintage-yellow">24/7</div>
-                <div className="text-sm text-primary-foreground/80">Emergency Service</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-vintage-yellow">FREE</div>
-                <div className="text-sm text-primary-foreground/80">Estimates</div>
+          {/* Main Headlines */}
+          <div className="space-y-6 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-5xl lg:text-7xl font-retro font-black text-white leading-tight">
+              PJ'S
+              <br />
+              <span className="text-vintage-yellow">DOORS</span>
+            </h1>
+            <h2 className="text-2xl lg:text-3xl font-bold text-white">
+              Install • Repair • Maintenance
+            </h2>
+            <p className="text-lg lg:text-xl text-white/90 max-w-lg">
+              Family owned, licensed & insured. We handle residential & commercial garage doors, 
+              overhead doors, roll-up doors, high speed doors, and more!
+            </p>
+          </div>
+
+          {/* CTAs */}
+          <div className="space-y-6 mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="heroCall" size="lg" className="text-xl">
+                Get FREE Estimate
+              </Button>
+              <Button variant="estimate" size="lg">
+                Schedule Service
+              </Button>
+            </div>
+            
+            {/* Phone Number */}
+            <div className="flex items-center gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-lg border-2 border-white/30">
+              <Phone className="w-6 h-6 text-vintage-yellow animate-pulse" />
+              <div>
+                <p className="text-sm text-white/80">Call Today:</p>
+                <a 
+                  href="tel:+17653771000" 
+                  className="text-2xl font-bold text-white hover:text-vintage-yellow transition-colors"
+                >
+                  765.377.1000
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Image */}
-          <div className="relative lg:h-[600px] animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <div className="relative h-full rounded-2xl overflow-hidden shadow-retro border-4 border-primary-foreground/20">
-              <img 
-                src={heroImage} 
-                alt="Professional garage door installation and repair services"
-                className="w-full h-full object-cover"
-              />
-              {/* Overlay Badge */}
-              <div className="absolute top-4 left-4 bg-vintage-yellow text-chocolate-brown px-4 py-2 rounded-lg font-bold shadow-lg">
-                <div className="text-sm">Starting at</div>
-                <div className="text-2xl font-black">$99</div>
-              </div>
+          {/* Value Props */}
+          <div className="grid grid-cols-2 gap-4 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+            <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+              <div className="text-3xl font-bold text-vintage-yellow">FREE</div>
+              <div className="text-sm text-white/80">Estimates</div>
+            </div>
+            <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+              <div className="text-3xl font-bold text-vintage-yellow">SAME DAY</div>
+              <div className="text-sm text-white/80">Service Available</div>
             </div>
           </div>
         </div>
