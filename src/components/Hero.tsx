@@ -51,13 +51,6 @@ export function Hero() {
             
             {/* Left Column - Headline & CTA */}
             <div className="space-y-8 animate-slide-up">
-              {/* Small Branding */}
-              <div className="inline-block">
-                <h1 className="text-3xl lg:text-4xl font-retro font-black text-white">
-                  PJ'S <span className="text-vintage-yellow">DOORS</span>
-                </h1>
-              </div>
-
               {/* Main Headline */}
               <div className="space-y-4">
                 <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
