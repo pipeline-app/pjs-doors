@@ -15,9 +15,9 @@ export function BeforeAfter() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl lg:text-5xl font-sink font-black text-chocolate-brown mb-4">
-            AMAZING
-            <span className="text-warm-orange"> TRANSFORMATIONS</span>
+            <h2 className="text-4xl lg:text-5xl font-roffene font-black text-chocolate-brown mb-4">
+              Amazing
+              <span className="text-warm-orange"> TRANSFORMATIONS</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             See how we transform broken, outdated garage doors into beautiful, functional entrances

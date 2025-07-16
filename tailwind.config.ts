@@ -113,6 +113,7 @@ export default {
 			},
 			fontFamily: {
 				'sink': ['Sink', 'Impact', 'Arial Black', 'sans-serif'],
+				'roffene': ['Roffene', 'serif'],
 				'inter': ['Inter', 'system-ui', 'sans-serif'],
 				'retro': ['Impact', 'Arial Black', 'sans-serif'],
 				'display': ['Bebas Neue', 'Impact', 'sans-serif'],

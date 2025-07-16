@@ -14,6 +14,14 @@ All colors MUST be HSL.
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roffene';
+  src: url('/src/assets/fonts/Roffene.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     /* Retro Garage Door Company Color Palette */
