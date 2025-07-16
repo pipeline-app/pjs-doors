@@ -10,6 +10,14 @@ import genieLogo from "@/assets/logos/genie-logo.png";
 import wayneDaltonLogo from "@/assets/logos/wayne-dalton-logo.png";
 import clopayLogo from "@/assets/logos/clopay-logo.png";
 
+// Import gallery images
+import garageDoor1 from "@/assets/gallery/garage-door-1.jpg";
+import garageDoor2 from "@/assets/gallery/garage-door-2.jpg";
+import garageDoor3 from "@/assets/gallery/garage-door-3.jpg";
+import garageDoor4 from "@/assets/gallery/garage-door-4.jpg";
+import garageDoor5 from "@/assets/gallery/garage-door-5.jpg";
+import garageDoor6 from "@/assets/gallery/garage-door-6.jpg";
+
 export function Services() {
   const services = [
     {
@@ -42,6 +50,15 @@ export function Services() {
     { name: "Genie", logo: genieLogo },
     { name: "Wayne Dalton", logo: wayneDaltonLogo },
     { name: "Clopay", logo: clopayLogo }
+  ];
+
+  const galleryImages = [
+    { src: garageDoor1, alt: "Modern residential garage door with white sectional panels" },
+    { src: garageDoor2, alt: "Traditional carriage house garage door with dark wood finish" },
+    { src: garageDoor3, alt: "Contemporary garage door with glass panels and aluminum frame" },
+    { src: garageDoor4, alt: "Rustic garage door with natural wood planks" },
+    { src: garageDoor5, alt: "Industrial roll-up garage door for commercial use" },
+    { src: garageDoor6, alt: "Classic raised panel garage door in beige color" }
   ];
 
   return (
@@ -98,33 +115,37 @@ export function Services() {
           ))}
         </div>
 
-        {/* Emergency Section */}
+        {/* Garage Door Gallery */}
         <div className="bg-gradient-cta text-primary-foreground p-8 rounded-2xl shadow-retro mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-4 flex items-center gap-3">
-                <Clock className="w-8 h-8 animate-pulse" />
-                24/7 Emergency Service
-              </h3>
-              <p className="text-lg opacity-90 mb-4">
-                Garage door stuck or broken? Don't wait! Our emergency team is ready to help 
-                any time of day or night. Fast response, professional results.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="emergency" size="lg">
-                  <Phone className="w-5 h-5" />
-                  Call 765.377.1000
-                </Button>
-                <div className="text-center sm:text-left">
-                  <div className="text-sm opacity-80">Schedule Today:</div>
-                  <div className="text-xl font-bold">765.377.1000</div>
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold mb-4">
+              Our Garage Door Gallery
+            </h3>
+            <p className="text-lg opacity-90">
+              Explore our stunning collection of garage doors for every style and need
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <div 
+                key={index}
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <div className="text-sm font-medium px-4 py-2 bg-white/20 rounded-lg backdrop-blur-sm">
+                      View Details
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl font-black mb-2">24/7</div>
-              <div className="text-xl">Available</div>
-            </div>
+            ))}
           </div>
         </div>
 
