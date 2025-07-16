@@ -58,6 +58,7 @@ export default {
 				'vintage-yellow': 'hsl(var(--vintage-yellow))',
 				'retro-green': 'hsl(var(--retro-green))',
 				'cream': 'hsl(var(--cream))',
+				'brand-orange': 'hsl(var(--brand-orange))',
 				/* Tuscany Color Palette */
 				'tuscany': {
 					'50': '35 77% 97%',
