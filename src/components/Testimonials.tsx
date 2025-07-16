@@ -51,7 +51,6 @@ export function Testimonials() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="text-lg font-medium text-chocolate-brown mb-4">500+ happy customers.</p>
               <div className="text-4xl lg:text-5xl font-bold text-warm-orange mb-2">
                 {stat.number}
               </div>
