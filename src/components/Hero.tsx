@@ -45,47 +45,69 @@ export function Hero() {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="max-w-md w-full animate-slide-up">
-            <div className="p-8">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Get Your Free Estimate
-                </h3>
-                <p className="text-white/90">
-                  Fill out the form and we'll contact you within 24 hours
+        <div className="min-h-screen flex items-center">
+          <div className="grid lg:grid-cols-2 gap-12 w-full items-center">
+            
+            {/* Left Column - Headline & CTA */}
+            <div className="space-y-8 animate-slide-up">
+              {/* Main Headline */}
+              <div className="space-y-4">
+                <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                  Broken Garage Door?<br />
+                  <span className="whitespace-nowrap ">We'll Fix It Today!</span>
+                </h2>
+                <p className="text-xl lg:text-2xl text-white/90">
+                  Same-day service available. Licensed & insured professionals ready to help.
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-white font-medium">
-                    Your Name *
-                  </Label>
-                  <Input id="name" type="text" placeholder="Enter your full name" className="mt-1" {...register("name")} />
-                  {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
-                </div>
-
-                <div>
-                  <Label htmlFor="phone" className="text-white font-medium">
-                    Phone Number *
-                  </Label>
-                  <Input id="phone" type="tel" placeholder="(555) 123-4567" className="mt-1" {...register("phone")} />
-                  {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>}
-                </div>
-
-                <div>
-                  <Label htmlFor="notes" className="text-white font-medium">
-                    Service Details
-                  </Label>
-                  <Textarea id="notes" placeholder="Describe your garage door issue or service needs..." className="mt-1 min-h-[100px]" {...register("notes")} />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full text-lg font-bold hover:bg-vintage-yellow/90 text-black bg-wheatfield-100">
-                  Get FREE Estimate Now
-                </Button>
-              </form>
             </div>
+
+            {/* Right Column - Form */}
+            <div className="animate-slide-up" style={{
+            animationDelay: '0.2s'
+          }}>
+              <div className="p-8">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    Get Your Free Estimate
+                  </h3>
+                  <p className="text-white/90">
+                    Fill out the form and we'll contact you within 24 hours
+                  </p>
+                </div>
+
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                  <div>
+                    <Label htmlFor="name" className="text-white font-medium">
+                      Your Name *
+                    </Label>
+                    <Input id="name" type="text" placeholder="Enter your full name" className="mt-1" {...register("name")} />
+                    {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
+                  </div>
+
+                  <div>
+                    <Label htmlFor="phone" className="text-white font-medium">
+                      Phone Number *
+                    </Label>
+                    <Input id="phone" type="tel" placeholder="(555) 123-4567" className="mt-1" {...register("phone")} />
+                    {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>}
+                  </div>
+
+                  <div>
+                    <Label htmlFor="notes" className="text-white font-medium">
+                      Service Details
+                    </Label>
+                    <Textarea id="notes" placeholder="Describe your garage door issue or service needs..." className="mt-1 min-h-[100px]" {...register("notes")} />
+                  </div>
+
+                  <Button type="submit" size="lg" className="w-full text-lg font-bold hover:bg-vintage-yellow/90 text-black bg-wheatfield-100">
+                    Get FREE Estimate Now
+                  </Button>
+                </form>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
