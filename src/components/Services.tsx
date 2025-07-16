@@ -135,12 +135,12 @@ export function Services() {
             {brands.map((brand, index) => (
               <div 
                 key={index}
-                className="px-6 py-4 bg-cream border-2 border-warm-orange/20 rounded-lg hover:bg-warm-orange hover:scale-105 transition-all duration-300 flex items-center justify-center min-h-[80px]"
+                className="px-6 py-4 hover:scale-105 transition-all duration-300 flex items-center justify-center min-h-[100px]"
               >
                 <img 
                   src={brand.logo} 
                   alt={`${brand.name} logo`} 
-                  className="max-h-12 max-w-32 object-contain"
+                  className="max-h-20 max-w-48 object-contain"
                 />
               </div>
             ))}
