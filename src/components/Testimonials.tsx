@@ -100,21 +100,6 @@ export function Testimonials() {
           ))}
         </div>
 
-        {/* Trust Indicators */}
-        <div className="grid md:grid-cols-3 gap-8 animate-slide-up" style={{ animationDelay: '1s' }}>
-          <div className="text-center p-6 bg-cream rounded-lg border-2 border-retro-green/20">
-            <div className="text-3xl font-bold text-retro-green mb-2">BBB A+</div>
-            <div className="text-sm text-muted-foreground">Better Business Bureau Rating</div>
-          </div>
-          <div className="text-center p-6 bg-cream rounded-lg border-2 border-warm-orange/20">
-            <div className="text-3xl font-bold text-warm-orange mb-2">Licensed</div>
-            <div className="text-sm text-muted-foreground">State Licensed & Insured</div>
-          </div>
-          <div className="text-center p-6 bg-cream rounded-lg border-2 border-vintage-yellow/20">
-            <div className="text-3xl font-bold text-chocolate-brown mb-2">Warranty</div>
-            <div className="text-sm text-muted-foreground">1 Year Service Guarantee</div>
-          </div>
-        </div>
       </div>
     </section>
   );
