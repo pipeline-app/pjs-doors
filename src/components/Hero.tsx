@@ -62,22 +62,6 @@ export function Hero() {
                 </p>
               </div>
 
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <Shield className="w-5 h-5" />
-                  <span className="font-semibold text-white">Licensed & Insured</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <Phone className="w-5 h-5 text-vintage-yellow" />
-                  <a 
-                    href="tel:+17653771000" 
-                    className="font-bold text-white hover:text-vintage-yellow transition-colors"
-                  >
-                    765.377.1000
-                  </a>
-                </div>
-              </div>
             </div>
 
             {/* Right Column - Form */}
