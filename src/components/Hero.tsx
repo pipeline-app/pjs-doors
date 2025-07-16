@@ -47,7 +47,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
         <div className="min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-12 w-full items-center">
+          <div className="grid md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto items-center">
             
             {/* Left Column - Headline & CTA */}
             <div className="space-y-8 animate-slide-up">
