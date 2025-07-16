@@ -51,13 +51,19 @@ export function Hero() {
             {/* Left Column - Headline & CTA */}
             <div className="space-y-8 animate-slide-up">
               {/* Rating Stars */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+              <div className="inline-block transform -rotate-1 mb-6">
+                <div className="bg-vintage-yellow px-4 py-2 rounded-sm shadow-lg">
+                  <div className="flex items-center gap-2">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-600 text-amber-600" />
+                      ))}
+                    </div>
+                    <span className="text-amber-900 font-bold text-lg tracking-wide transform skew-x-[-2deg]">
+                      EXCELLENT SERVICE!
+                    </span>
+                  </div>
                 </div>
-                <span className="text-white font-medium">Excellent service!</span>
               </div>
               
               {/* Main Headline */}
