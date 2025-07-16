@@ -103,18 +103,6 @@ export function BeforeAfter() {
           </div>
         </div>
 
-        {/* Bottom CTA Section */}
-        <div className="text-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-          <div className="bg-allports-500 text-primary-foreground p-8 rounded-2xl shadow-retro">
-            <h3 className="text-2xl font-bold mb-4">Ready for Your Transformation?</h3>
-            <p className="text-lg mb-6 opacity-90">
-              Get your free estimate today and join hundreds of satisfied customers
-            </p>
-            <Button variant="estimate" size="lg" className="text-lg px-8">
-              Get My Free Estimate
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );
