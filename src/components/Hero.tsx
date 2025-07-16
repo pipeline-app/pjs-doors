@@ -52,14 +52,14 @@ export function Hero() {
             <div className="space-y-8 animate-slide-up">
               {/* Rating Stars */}
               <div className="inline-block transform -rotate-1 mb-6">
-                <div className="bg-vintage-yellow px-4 py-2 rounded-sm shadow-lg">
+                <div className="bg-vintage-yellow px-4 py-2 shadow-lg">
                   <div className="flex items-center gap-2">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-600 text-amber-600" />
+                        <Star key={i} className="w-4 h-4 fill-white text-white" />
                       ))}
                     </div>
-                    <span className="text-amber-900 font-bold text-lg tracking-wide transform skew-x-[-2deg]">
+                    <span className="text-black font-bold text-lg tracking-wide transform skew-x-[-2deg]">
                       EXCELLENT SERVICE!
                     </span>
                   </div>
