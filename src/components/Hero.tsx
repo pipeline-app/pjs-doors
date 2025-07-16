@@ -7,21 +7,26 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   phone: z.string().min(10, "Please enter a valid phone number"),
   notes: z.string().optional()
 });
-
 type FormData = z.infer<typeof formSchema>;
-
 export function Hero() {
-  const { toast } = useToast();
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
+  const {
+    toast
+  } = useToast();
+  const {
+    register,
+    handleSubmit,
+    formState: {
+      errors
+    },
+    reset
+  } = useForm<FormData>({
     resolver: zodResolver(formSchema)
   });
-
   const onSubmit = (data: FormData) => {
     console.log("Form submitted:", data);
     toast({
@@ -30,16 +35,10 @@ export function Hero() {
     });
     reset();
   };
-
-  return (
-    <section className="relative min-h-screen overflow-hidden">
+  return <section className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/bae767a5-7917-4b08-be62-7e6aacbee251.png" 
-          alt="Beautiful twilight house with prominent garage door"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/bae767a5-7917-4b08-be62-7e6aacbee251.png" alt="Beautiful twilight house with prominent garage door" className="w-full h-full object-cover" />
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>
@@ -65,8 +64,10 @@ export function Hero() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="p-8">
+            <div className="animate-slide-up" style={{
+            animationDelay: '0.2s'
+          }}>
+              <div className="p-8 bg-[#0e2d36]/[0.67]">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-white mb-2">
                     Get Your Free Estimate
@@ -81,51 +82,26 @@ export function Hero() {
                     <Label htmlFor="name" className="text-white font-medium">
                       Your Name *
                     </Label>
-                    <Input
-                      id="name"
-                      type="text"
-                      placeholder="Enter your full name"
-                      className="mt-1"
-                      {...register("name")}
-                    />
-                    {errors.name && (
-                      <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>
-                    )}
+                    <Input id="name" type="text" placeholder="Enter your full name" className="mt-1" {...register("name")} />
+                    {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
                   </div>
 
                   <div>
                     <Label htmlFor="phone" className="text-white font-medium">
                       Phone Number *
                     </Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="(555) 123-4567"
-                      className="mt-1"
-                      {...register("phone")}
-                    />
-                    {errors.phone && (
-                      <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>
-                    )}
+                    <Input id="phone" type="tel" placeholder="(555) 123-4567" className="mt-1" {...register("phone")} />
+                    {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>}
                   </div>
 
                   <div>
                     <Label htmlFor="notes" className="text-white font-medium">
                       Service Details
                     </Label>
-                    <Textarea
-                      id="notes"
-                      placeholder="Describe your garage door issue or service needs..."
-                      className="mt-1 min-h-[100px]"
-                      {...register("notes")}
-                    />
+                    <Textarea id="notes" placeholder="Describe your garage door issue or service needs..." className="mt-1 min-h-[100px]" {...register("notes")} />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full text-lg font-bold bg-brand-orange hover:bg-brand-orange/90 text-white"
-                  >
+                  <Button type="submit" size="lg" className="w-full text-lg font-bold bg-brand-orange hover:bg-brand-orange/90 text-white">
                     Get FREE Estimate Now
                   </Button>
                 </form>
@@ -135,6 +111,5 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
