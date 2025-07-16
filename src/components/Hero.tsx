@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Clock, Shield, Star } from "lucide-react";
-import houseGarageBackground from "@/assets/house-garage-background.jpg";
 
 export function Hero() {
   return (
@@ -8,8 +7,8 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src={houseGarageBackground} 
-          alt="Beautiful house with garage door"
+          src="/lovable-uploads/bae767a5-7917-4b08-be62-7e6aacbee251.png" 
+          alt="Beautiful twilight house with prominent garage door"
           className="w-full h-full object-cover"
         />
         {/* Dark overlay for text readability */}
