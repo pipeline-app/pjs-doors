@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, RotateCcw, Package, Clock, Phone, Shield } from "lucide-react";
 
 // Import brand logos
-import craftsmanLogo from "@/assets/logos/craftsman-logo.png";
+import craftsmanLogo from "/lovable-uploads/fdf19fbb-2ae0-4864-9a18-9f361b823626.png";
 import chamberlainLogo from "@/assets/logos/chamberlain-logo.png";
 import liftmasterLogo from "@/assets/logos/liftmaster-logo.png";
 import genieLogo from "@/assets/logos/genie-logo.png";
