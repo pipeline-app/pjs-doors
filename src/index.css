@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 45 25% 95%;
     --popover-foreground: 25 20% 15%;
 
-    /* Burnt Orange Primary */
-    --primary: 22 85% 55%;
+    /* Tuscany Primary */
+    --primary: 22 65% 53%;
     --primary-foreground: 45 15% 97%;
 
     /* Mustard Yellow Secondary */
@@ -39,11 +39,11 @@ All colors MUST be HSL.
 
     --border: 45 15% 85%;
     --input: 45 15% 92%;
-    --ring: 22 85% 55%;
+    --ring: 22 65% 53%;
 
     /* Retro Design System Colors */
     --chocolate-brown: 25 45% 25%;
-    --warm-orange: 22 85% 55%;
+    --warm-orange: 22 65% 53%;
     --vintage-yellow: 48 90% 65%;
     --retro-green: 75 35% 55%;
     --cream: 45 25% 95%;
@@ -51,7 +51,7 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(var(--vintage-yellow)));
     --gradient-section: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--background)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(22 90% 45%));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(19 70% 47%));
     
     /* Shadows */
     --shadow-retro: 0 8px 32px -8px hsl(var(--warm-orange) / 0.3);

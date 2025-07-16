@@ -58,6 +58,20 @@ export default {
 				'vintage-yellow': 'hsl(var(--vintage-yellow))',
 				'retro-green': 'hsl(var(--retro-green))',
 				'cream': 'hsl(var(--cream))',
+				/* Tuscany Color Palette */
+				'tuscany': {
+					'50': '35 77% 97%',
+					'100': '33 73% 91%',
+					'200': '32 69% 83%',
+					'300': '29 65% 73%',
+					'400': '26 70% 61%',
+					'500': '22 65% 53%',
+					'600': '19 70% 47%',
+					'700': '17 65% 40%',
+					'800': '16 58% 34%',
+					'900': '15 54% 28%',
+					'950': '14 60% 15%',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
