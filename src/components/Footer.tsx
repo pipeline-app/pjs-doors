@@ -15,7 +15,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-chocolate-brown text-primary-foreground">
+    <footer className="text-primary-foreground" style={{ backgroundColor: '#0D3441' }}>
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
@@ -131,29 +131,9 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Call to Action Banner */}
-      <div className="bg-warm-orange text-primary-foreground py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <Phone className="w-6 h-6 animate-pulse" />
-              <div>
-                <p className="font-bold">Ready to Get Started?</p>
-                <p className="text-sm opacity-90">Call PJ's Doors today for your project!</p>
-              </div>
-            </div>
-            <a 
-              href="tel:+17653771000"
-              className="bg-primary-foreground text-warm-orange px-6 py-2 rounded-lg font-bold hover:bg-primary-foreground/90 transition-colors"
-            >
-              Call 765.377.1000
-            </a>
-          </div>
-        </div>
-      </div>
 
       {/* Bottom Bar */}
-      <div className="bg-chocolate-brown/80 border-t border-primary-foreground/20 py-6">
+      <div className="border-t border-primary-foreground/20 py-6" style={{ backgroundColor: '#0D3441' }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
             <div>
