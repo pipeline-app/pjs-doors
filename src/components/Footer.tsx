@@ -22,9 +22,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-retro font-black text-white mb-2">
-                PJ'S DOORS
-              </h3>
+              <img 
+                src="/lovable-uploads/866ea9cb-85a6-4fee-9aab-999bfdc71174.png" 
+                alt="PJ's Doors Logo" 
+                className="h-12 w-auto mb-2"
+              />
               <p className="text-white/80 text-sm leading-relaxed">
                 Family owned garage door company serving Indiana and surrounding areas. 
                 We handle residential & commercial install, repair & maintenance.
