@@ -66,7 +66,7 @@ export function Header() {
               <Phone className="w-4 h-4" />
               765.377.1000
             </a>
-            <Button variant="retro" size="sm">
+            <Button variant="retro" size="sm" style={{ backgroundColor: '#C85E28' }}>
               Free Estimate
             </Button>
           </div>
