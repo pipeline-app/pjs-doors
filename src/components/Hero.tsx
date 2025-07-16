@@ -53,7 +53,7 @@ export function Hero() {
             <div className="space-y-8 animate-slide-up">
               {/* Main Headline */}
               <div className="space-y-4">
-                <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                <h2 className="text-4xl lg:text-6xl font-roffene font-bold text-white leading-tight">
                   Need a new garage door?<br />
                   <span className="text-vintage-yellow">We'll get you one today.</span>
                 </h2>
