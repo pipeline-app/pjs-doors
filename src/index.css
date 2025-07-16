@@ -12,18 +12,18 @@ All colors MUST be HSL.
     --background: 45 15% 97%;
     --foreground: 25 20% 15%;
 
-    --card: 45 25% 95%;
+    --card: 43 67% 96%;
     --card-foreground: 25 20% 15%;
 
-    --popover: 45 25% 95%;
+    --popover: 43 67% 96%;
     --popover-foreground: 25 20% 15%;
 
     /* Tuscany Primary */
     --primary: 22 65% 53%;
     --primary-foreground: 45 15% 97%;
 
-    /* Mustard Yellow Secondary */
-    --secondary: 48 90% 65%;
+    /* Wheatfield Yellow Secondary */
+    --secondary: 44 67% 56%;
     --secondary-foreground: 25 20% 15%;
 
     /* Warm Muted */
@@ -44,14 +44,14 @@ All colors MUST be HSL.
     /* Retro Design System Colors */
     --chocolate-brown: 25 45% 25%;
     --warm-orange: 22 65% 53%;
-    --vintage-yellow: 48 90% 65%;
+    --vintage-yellow: 44 67% 56%;
     --retro-green: 75 35% 55%;
-    --cream: 45 25% 95%;
+    --cream: 43 65% 89%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(var(--vintage-yellow)));
     --gradient-section: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--background)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(19 70% 47%));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(38 66% 50%));
     
     /* Shadows */
     --shadow-retro: 0 8px 32px -8px hsl(var(--warm-orange) / 0.3);
