@@ -1,7 +1,4 @@
 import { SectionHeading } from "@/components/ui/section-heading";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import contactBackground from "@/assets/contact-background.jpg";
 
 export function Contact() {
@@ -40,32 +37,11 @@ export function Contact() {
               </p>
             </div>
 
-            <form className="space-y-6">
-              <div>
-                <label className="text-white font-medium block mb-2">
-                  Your Name *
-                </label>
-                <Input type="text" placeholder="Enter your full name" className="mt-1" />
-              </div>
-
-              <div>
-                <label className="text-white font-medium block mb-2">
-                  Phone Number *
-                </label>
-                <Input type="tel" placeholder="(555) 123-4567" className="mt-1" />
-              </div>
-
-              <div>
-                <label className="text-white font-medium block mb-2">
-                  Service Details
-                </label>
-                <Textarea placeholder="Describe your garage door issue or service needs..." className="mt-1 min-h-[100px]" />
-              </div>
-
-              <Button type="submit" size="lg" className="w-full text-lg font-bold bg-brand-orange hover:bg-brand-orange/90 text-white">
-                Get FREE Estimate Now
-              </Button>
-            </form>
+            <div>
+              <div id="370d2cc7-714b-4a8d-8a4d-b638f64a558c"></div>
+              <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+              <script src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="370d2cc7-714b-4a8d-8a4d-b638f64a558c" form_url="https://clienthub.getjobber.com/client_hubs/370d2cc7-714b-4a8d-8a4d-b638f64a558c/public/work_request/embedded_work_request_form"></script>
+            </div>
           </div>
         </div>
       </div>
