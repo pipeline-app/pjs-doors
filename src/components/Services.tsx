@@ -1,6 +1,7 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Wrench, RotateCcw, Package, Clock, Phone, Shield } from "lucide-react";
 
 // Import brand logos
@@ -130,43 +131,49 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="relative overflow-hidden border-2 border-warm-orange/20 shadow-card hover:shadow-retro transition-all duration-300 hover:scale-105 animate-slide-up bg-cream"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              {/* Retro Corner Design */}
-              <div className="absolute top-0 right-0 w-16 h-16 bg-vintage-yellow transform rotate-45 translate-x-8 -translate-y-8"></div>
-              
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-4 bg-gradient-cta rounded-full w-fit shadow-button">
-                  <service.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <CardTitle className="text-xl font-bold text-chocolate-brown">{service.title}</CardTitle>
-                <p className="text-muted-foreground">{service.description}</p>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-retro-green rounded-full"></div>
-                      <span className="text-sm text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="pt-4 border-t border-warm-orange/20">
-                  <div className="text-2xl font-bold text-warm-orange mb-3">{service.price}</div>
-                  <Button variant="outline" className="w-full border-warm-orange text-warm-orange hover:bg-warm-orange hover:text-primary-foreground">
-                    Learn More
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mb-20 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <Carousel opts={{ align: "start", loop: true }} className="w-full">
+            <CarouselContent className="-ml-1">
+              {services.map((service, index) => (
+                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                  <Card 
+                    className="relative overflow-hidden border-2 border-warm-orange/20 shadow-card hover:shadow-retro transition-all duration-300 hover:scale-105 bg-cream h-full"
+                  >
+                    {/* Retro Corner Design */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-vintage-yellow transform rotate-45 translate-x-8 -translate-y-8"></div>
+                    
+                    <CardHeader className="text-center pb-4">
+                      <div className="mx-auto mb-4 p-4 bg-gradient-cta rounded-full w-fit shadow-button">
+                        <service.icon className="w-8 h-8 text-primary-foreground" />
+                      </div>
+                      <CardTitle className="text-xl font-bold text-chocolate-brown">{service.title}</CardTitle>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-4">
+                      <ul className="space-y-2">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-retro-green rounded-full"></div>
+                            <span className="text-sm text-foreground">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      
+                      <div className="pt-4 border-t border-warm-orange/20">
+                        <div className="text-2xl font-bold text-warm-orange mb-3">{service.price}</div>
+                        <Button variant="outline" className="w-full border-warm-orange text-warm-orange hover:bg-warm-orange hover:text-primary-foreground">
+                          Learn More
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0 md:-left-12" />
+            <CarouselNext className="right-0 md:-right-12" />
+          </Carousel>
         </div>
 
         {/* Garage Door Gallery */}
