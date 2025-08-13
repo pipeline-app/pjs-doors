@@ -28,7 +28,6 @@ export function Testimonials() {
   ];
 
   const stats = [
-    { number: "500+", label: "Happy Customers" },
     { number: "Family", label: "Owned Business" },
     { number: "4.9★", label: "Average Rating" },
     { number: "Licensed", label: "& Insured" }
