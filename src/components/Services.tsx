@@ -133,9 +133,9 @@ export function Services() {
         {/* Services Grid */}
         <div className="mb-20 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
-            <CarouselContent className="-ml-1">
+            <CarouselContent className="-ml-4 md:-ml-6 lg:-ml-10">
               {services.map((service, index) => (
-                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-4 md:pl-6 lg:pl-10 md:basis-1/2 lg:basis-1/3">
                   <Card 
                     className="relative overflow-hidden border-2 border-warm-orange/20 shadow-card hover:shadow-retro transition-all duration-300 hover:scale-105 bg-cream h-full"
                   >
