@@ -14,9 +14,9 @@ export function Contact() {
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
-          <SectionHeading 
-            firstWord="GET YOUR"
-            secondWord="FREE ESTIMATE"
+          <SectionHeading
+            firstWord="Get an"
+            secondWord="Estimate"
             firstWordColor="white"
             secondWordColor="orange"
           />
@@ -30,7 +30,7 @@ export function Contact() {
           <div className="p-8 bg-transparent border-4 border-white animate-slide-up">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-white mb-2">
-                Get Your Free Estimate
+                Get an Estimate
               </h3>
               <p className="text-white/90">
                 Fill out the form and we'll contact you within 24 hours
